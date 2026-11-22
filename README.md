@@ -1,1 +1,0 @@
-# Mi currículum personal
