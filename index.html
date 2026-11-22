@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Mata Garcia - Currículum</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f3f4f6;
+            --bg-card: #ffffff;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        .summary {
+            background-color: #eff6ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .item-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: white;
+            border: 1px solid var(--border);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background-color: #eff6ff;
+        }
+
+        ul.styled-list {
+            list-style-type: none;
+        }
+
+        ul.styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.styled-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem; }
+            .item-header { flex-direction: column; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Pedro Mata Garcia</h1>
+            <div class="subtitle">Estudiante de Ingeniería Informática</div>
+            <div class="contact-info">
+                <span>📍 Sevilla</span>
+                <span>✉️ <a href="mailto:pedmatgar@gmail.com">pedmatgar@gmail.com</a></span>
+                <span>📱 640 20 39 41</span>
+                <span>💻 <a href="https://github.com/badkidpmg" target="_blank">github.com/badkidpmg</a></span>
+            </div>
+        </header>
+
+        <div class="summary">
+            <strong>Objetivo Profesional:</strong> Apasionado por la tecnología con gran facilidad para el aprendizaje de nuevos lenguajes y herramientas. Busco activamente prácticas de empresa para convalidar con la Universidad de Sevilla y aplicar mis conocimientos en un entorno profesional real, aportando valor y consolidando mi experiencia.
+        </div>
+
+        <section>
+            <h2>🎓 Educación</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Grado en Ingeniería Informática - Sistemas Informáticos</span>
+                    <span class="item-meta">Universidad de Sevilla | 4º Curso (Actualidad)</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>💻 Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Haskell</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Podman</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Windows</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Proyectos Destacados</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Script de automatización para Modrinth</span>
+                    <span class="item-meta">Python</span>
+                </div>
+                <p>Desarrollo de un script automatizado para la descarga y gestión eficiente de dependencias alojadas en la plataforma Modrinth.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">API REST Universitaria</span>
+                    <span class="item-meta">JavaScript</span>
+                </div>
+                <p>Diseño, desarrollo y despliegue de una API RESTful para una asignatura del grado, definiendo la estructura de los endpoints y la lógica de negocio subyacente.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🌍 Idiomas</h2>
+            <ul class="styled-list">
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés:</strong> Avanzado (Fluido en lectura técnica y comprensión, sin titulación oficial)</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
